@@ -20,7 +20,7 @@
 
 ## 🚀 플레이하기
 
-[게임 바로가기](https://[your-username].github.io/lotte-party-game/)
+[게임 바로가기](https://muniv.github.io/lotte-party/)
 
 ## 🛠️ 기술 스택
 
@@ -32,7 +32,7 @@
 ## 📁 파일 구조
 
 ```
-lotte-party-game/
+lotte-party/
 ├── index.html          # 메인 HTML 파일
 ├── style.css           # 스타일시트
 ├── script.js           # 게임 로직
@@ -65,8 +65,8 @@ lotte-party-game/
 
 1. 저장소 클론
 ```bash
-git clone https://github.com/[your-username]/lotte-party-game.git
-cd lotte-party-game
+git clone https://github.com/muniv/lotte-party.git
+cd lotte-party
 ```
 
 2. 로컬 서버 실행
@@ -108,6 +108,6 @@ npx serve .
 
 ---
 
-**개발자**: [Your Name]  
+**개발자**: muniv  
 **버전**: 1.0.0  
 **라이선스**: MIT 
