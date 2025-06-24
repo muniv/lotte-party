@@ -150,7 +150,15 @@ function inviteNpc(npcId, npcElement) {
 // 축하 메시지 표시
 function showCongratulations(npcId) {
     const messages = {
-        mom: "부모님이 축하해주세요! 🎉",
+        mom: `사랑하는 주혜에게,
+
+우리의 자랑스러운 주혜! 롯데 캐피탈에 입사했다는 소식을 듣고 정말 기쁘고 뿌듯한 마음이야. 그동안 열심히 노력하고 최선을 다해 준비해온 너의 모습이 이렇게 좋은 결과로 이어져서 부모로서 너무 행복하고 감사해.
+
+새로운 시작을 앞두고 설레기도 하고 조금은 긴장되겠지만, 너라면 충분히 잘 해낼 거라고 믿어. 네가 가진 열정과 성실함은 어디서든 빛날 거야. 앞으로도 항상 너를 응원하고 지지할게. 힘든 순간이 오더라도 우리 가족이 항상 너의 든든한 버팀목이 되어줄 거라는 걸 잊지 말아줘.
+
+너의 앞날에 행복과 성공이 가득하길 바라며, 롯데 캐피탈에서 멋진 커리어를 만들어가길 기도할게. 정말 정말 축하하고, 사랑한다!
+
+- 엄마, 아빠가 💕`,
         friend: "친구가 축하해주세요! 🎉",
         teacher: "선생님이 축하해주세요! 🎉",
         coworker: "동기가 축하해주세요! 🎉"
@@ -164,21 +172,26 @@ function showCongratulations(npcId) {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(255, 107, 107, 0.9);
+        background: rgba(255, 107, 107, 0.95);
         color: white;
-        padding: 15px 25px;
-        border-radius: 25px;
-        font-size: 1.2em;
-        font-weight: bold;
+        padding: 25px 30px;
+        border-radius: 15px;
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 1.6;
         z-index: 100;
-        animation: fadeInOut 2s ease-in-out;
+        animation: fadeInOut 4s ease-in-out;
+        max-width: 400px;
+        text-align: left;
+        white-space: pre-line;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     `;
     
     document.querySelector('.game-area').appendChild(notification);
     
     setTimeout(() => {
         notification.remove();
-    }, 2000);
+    }, 4000);
 }
 
 // 진행 상황 업데이트
