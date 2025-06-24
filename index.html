@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데 입사 파티 - 방향키와 엔터로 초대장을 전해요!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🎉 롯데 입사 파티 🎉</h1>
+            <p class="instructions">방향키로 이동하고 엔터키로 초대장을 전달하세요!</p>
+            <div class="progress">진행 상황: <span id="progress">0/4</span></div>
+        </div>
+        
+        <div class="game-area">
+            <!-- 플레이어 캐릭터 -->
+            <div id="player" class="player"></div>
+            
+            <!-- NPC 캐릭터들 -->
+            <div id="mom" class="npc" data-npc="mom">
+                <div class="npc-label">부모님</div>
+            </div>
+            <div id="friend" class="npc" data-npc="friend">
+                <div class="npc-label">친구</div>
+            </div>
+            <div id="teacher" class="npc" data-npc="teacher">
+                <div class="npc-label">선생님</div>
+            </div>
+            <div id="coworker" class="npc" data-npc="coworker">
+                <div class="npc-label">동기</div>
+            </div>
+        </div>
+        
+        <!-- 파티 화면 (처음에는 숨김) -->
+        <div id="party-screen" class="party-screen hidden">
+            <div class="party-content">
+                <h2>🎊 축하합니다! 🎊</h2>
+                <p class="congratulation">당신은 롯데캐피탈의 일원이 되었습니다!</p>
+                <div class="pledge-section">
+                    <label for="pledge-input">나의 입사 다짐을 적어보세요!</label>
+                    <textarea id="pledge-input" placeholder="나의 입사 다짐을 적어보세요!" rows="4"></textarea>
+                    <button id="submit-pledge">다짐 제출하기</button>
+                </div>
+                <div id="final-result" class="final-result hidden">
+                    <h3>🎯 당신의 다짐</h3>
+                    <p id="pledge-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
